@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 7备份 12</title>
+    <defs>
+        <filter x="-14.3%" y="-14.3%" width="128.6%" height="128.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="124" transform="translate(-1297.000000, -216.000000)" fill="#FFFFFF">
+            <g id="编组-17" transform="translate(1297.000000, 216.000000)">
+                <g id="编组备份-2" filter="url(#filter-1)" transform="translate(5.000000, 5.000000)">
+                    <path d="M28.0000045,56 C12.5360045,56 4.45326696e-06,43.464 4.45326696e-06,28 C4.45326696e-06,12.536 12.5360045,0 28.0000045,0 C43.4640045,0 56.0000045,12.536 56.0000045,28 C56.0000045,43.464 43.4640045,56 28.0000045,56 Z M28.0000045,50.1052632 C40.2083896,50.1052632 50.1052676,40.2083852 50.1052676,28 C50.1052676,15.7916148 40.2083896,5.89473684 28.0000045,5.89473684 C15.7916193,5.89473684 5.8947413,15.7916148 5.8947413,28 C5.8947413,40.2083852 15.7916193,50.1052632 28.0000045,50.1052632 Z" id="形状" fill-rule="nonzero"></path>
+                    <path d="M35.5887545,54.9595 C33.118721,55.6520498 30.5652892,56.002153 28,56.0000099 C26.0082545,56.0000099 24.0652545,55.792 22.1912545,55.39675 C23.3467545,53.1845 24,50.6685 24,48 C24,39.1635 16.8365045,32 8,32 C5.33150445,32 2.81550445,32.65325 0.603254453,33.80875 C0.201079516,31.8986899 -0.00109415958,29.9519409 0,28 C1.13200445,28.012 2.24525445,22.0225 3.34500445,22.03175 C18.0075045,22.15275 30.2145045,22.01775 51.8707545,22.0017497 C53.2102545,22.00025 54.5857545,28 56,28 C56,29.7035 55.8477545,31.3715 55.5565045,32.99125 C53.7778953,32.3334986 51.8963384,31.9978389 50,32 C41.1635045,32 34,39.1635 34,48 C34,50.49425 34.5707545,52.85525 35.5887545,54.9595 Z" id="路径" fill-rule="nonzero"></path>
+                    <circle id="椭圆形" cx="28.0000045" cy="26.6" r="7"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

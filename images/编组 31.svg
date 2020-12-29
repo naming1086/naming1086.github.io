@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 31</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.901961 0 0 0 0 0.901961 0 0 0 0 0.901961 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-31" transform="translate(-541.000000, -403.000000)" filter="url(#filter-1)">
+            <g transform="translate(541.000000, 403.000000)">
+                <rect id="矩形" stroke="#979797" fill="#D8D8D8" x="0.5" y="0.5" width="1" height="11"></rect>
+                <rect id="矩形备份-39" stroke="#979797" fill="#D8D8D8" x="0.5" y="22.5" width="1" height="11"></rect>
+                <rect id="矩形备份-34" stroke="#979797" fill="#D8D8D8" transform="translate(33.000000, 6.000000) scale(-1, 1) translate(-33.000000, -6.000000) " x="32.5" y="0.5" width="1" height="11"></rect>
+                <rect id="矩形备份-36" stroke="#979797" fill="#D8D8D8" transform="translate(33.000000, 28.000000) scale(-1, 1) translate(-33.000000, -28.000000) " x="32.5" y="22.5" width="1" height="11"></rect>
+                <rect id="矩形备份-33" stroke="#979797" fill="#D8D8D8" transform="translate(6.000000, 1.000000) rotate(-270.000000) translate(-6.000000, -1.000000) " x="5.5" y="-4.5" width="1" height="11"></rect>
+                <rect id="矩形备份-35" stroke="#979797" fill="#D8D8D8" transform="translate(28.000000, 1.000000) scale(-1, 1) rotate(-270.000000) translate(-28.000000, -1.000000) " x="27.5" y="-4.5" width="1" height="11"></rect>
+                <rect id="矩形备份-37" stroke="#979797" fill="#D8D8D8" transform="translate(28.000000, 33.000000) scale(-1, 1) rotate(-270.000000) translate(-28.000000, -33.000000) " x="27.5" y="27.5" width="1" height="11"></rect>
+                <rect id="矩形备份-38" stroke="#979797" fill="#D8D8D8" transform="translate(6.000000, 33.000000) scale(-1, 1) rotate(-270.000000) translate(-6.000000, -33.000000) " x="5.5" y="27.5" width="1" height="11"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

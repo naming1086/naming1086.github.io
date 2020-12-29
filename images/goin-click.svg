@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 16备份</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.258824 0 0 0 0 0.886275 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter x="-23.9%" y="-23.9%" width="147.7%" height="147.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.258823529   0 0 0 0 0.88627451   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="23备份" transform="translate(-254.000000, -65.000000)">
+            <g id="编组-16备份" transform="translate(254.000000, 65.000000)">
+                <circle id="椭圆形备份-10" fill="#FFFFFF" opacity="0.800000012" cx="40" cy="40" r="40"></circle>
+                <g filter="url(#filter-1)" id="编组">
+                    <g filter="url(#filter-2)" transform="translate(17.666667, 17.666667)">
+                        <path d="M22.0000035,44 C9.84971778,44 3.49899547e-06,34.1502857 3.49899547e-06,22 C3.49899547e-06,9.84971429 9.84971778,0 22.0000035,0 C34.1502892,0 44.0000035,9.84971429 44.0000035,22 C44.0000035,34.1502857 34.1502892,44 22.0000035,44 Z M22.0000035,39.3684211 C31.5923061,39.3684211 39.3684246,31.5923026 39.3684246,22 C39.3684246,12.4076974 31.5923061,4.63157895 22.0000035,4.63157895 C12.4077009,4.63157895 4.63158245,12.4076974 4.63158245,22 C4.63158245,31.5923026 12.4077009,39.3684211 22.0000035,39.3684211 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M27.9625928,43.1824643 C26.0218522,43.7266106 24.0155844,44.0016917 22,44.0000078 C20.4350571,44.0000078 18.9084142,43.8365714 17.4359856,43.5260179 C18.3438785,41.7878214 18.8571464,39.8109643 18.8571464,37.7142857 C18.8571464,30.7713214 13.2286821,25.1428571 6.28571778,25.1428571 C4.18903921,25.1428571 2.21218207,25.656125 0.473985642,26.5640179 C0.157991048,25.0632563 -0.000859696814,23.5336678 0,22 C0.88943207,22.0094286 1.7641285,17.3033929 2.62821778,17.3106607 C14.1487535,17.4057321 23.7399678,17.2996607 40.7555928,17.2870891 C41.8080571,17.2859107 42.8888071,22 44,22 C44,23.3384643 43.8803785,24.6490357 43.6515392,25.9216964 C42.2540606,25.4048918 40.7756945,25.1411592 39.2857178,25.1428571 C32.3427535,25.1428571 26.7142892,30.7713214 26.7142892,37.7142857 C26.7142892,39.6740536 27.1627356,41.529125 27.9625928,43.1824643 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <circle id="椭圆形" fill="#FFFFFF" cx="22.0000035" cy="20.9" r="5.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

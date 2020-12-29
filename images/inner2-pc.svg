@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组备份 18</title>
+    <defs>
+        <filter x="-31.6%" y="-33.3%" width="163.2%" height="166.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9" transform="translate(-562.000000, -113.000000)">
+            <g id="编组-5备份" filter="url(#filter-1)" transform="translate(567.000000, 119.000000)">
+                <circle id="椭圆形" stroke="#FFFFFF" stroke-width="3" cx="19" cy="18" r="16.5"></circle>
+                <g id="编组" transform="translate(0.000000, 6.000000)" fill="#FFFFFF">
+                    <polygon id="路径" points="10.6881988 19.973913 0 19.973913 0 17.157764 9.5689441 17.157764 13.2857143 12.5751553 17.1080745 17.9950311 19.9590062 14.6658385 22.0074534 17.1925466 38 17.1925466 38 20.0086957 20.6981366 20.0086957 19.8534161 18.5304348 17.0236025 22.8173913 13.0111801 17.1018634"></polygon>
+                    <polygon id="路径" points="23.0338027 0.900277114 20.3087031 4.59258481 25.4720497 4.59258481 17.0816114 12.863354 20.1294202 7.10335404 16.4720497 7.10335404 19.053723 0.863354037 23.0338027 0.863354037"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

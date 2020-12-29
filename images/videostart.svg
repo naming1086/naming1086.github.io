@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.258824 0 0 0 0 0.886275 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="23备份" transform="translate(-553.000000, -302.000000)">
+            <g id="编组" transform="translate(553.000000, 302.000000)">
+                <g id="编组-6备份-3" fill="#000000" fill-opacity="0.3" stroke="#FFFFFF" stroke-width="2">
+                    <circle id="椭圆形" cx="22" cy="22" r="21"></circle>
+                </g>
+                <g filter="url(#filter-1)" id="播放">
+                    <g transform="translate(16.404223, 11.000000)">
+                        <path d="M16.2748569,9.80660379 L2.67814102,0.415094344 C2.36912476,0.155660373 2.00860575,0 1.59658408,0 C0.721037984,0 0,0.726415091 0,1.55660378 L0,20.4433962 C0,21.3254717 0.721037962,22 1.59658408,22 C2.00860578,22 2.42062747,21.8443396 2.67814102,21.5849057 L16.2748569,12.0896227 C16.5838732,11.8301887 16.7383814,11.4150944 16.7383813,10.9481132 C16.7898841,10.5330189 16.5838732,10.1179245 16.2748569,9.80660379 Z" id="路径" fill="#FF6527" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
