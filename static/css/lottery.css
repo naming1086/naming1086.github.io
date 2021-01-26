@@ -1,0 +1,753 @@
+
+
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type="number"]{
+        -moz-appearance: textfield;
+    }
+    .icon-user{
+        position: absolute;
+        left: 0.15rem;
+        z-index: 5;
+        background-image: url(../../images/phone.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 0.15rem;
+        height: 0.20rem;
+        top: 0.1rem;
+    }
+
+
+
+    @keyframes scroll{
+        0% {
+            -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+        }
+        6.25% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        12.5% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        18.75% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        25% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        31.25% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        37.5% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        43.75% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        50% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        56.25% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        62.5% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        68.75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        81.25% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        87.5% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        93.75% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+
+    }
+    @-moz-keyframes scroll{
+        0% {
+            -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+        }
+        6.25% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        12.5% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        18.75% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        25% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        31.25% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        37.5% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        43.75% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        50% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        56.25% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        62.5% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        68.75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        81.25% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        87.5% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        93.75% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+    }
+    @-webkit-keyframes scroll{
+        0% {
+            -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+        }
+        6.25% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        12.5% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        18.75% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        25% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        31.25% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        37.5% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        43.75% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        50% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        56.25% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        62.5% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        68.75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        81.25% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        87.5% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        93.75% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+    }
+    @-o-keyframes scroll{
+        0% {
+            -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+        }
+        6.25% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        12.5% {
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+        18.75% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        25% {
+            -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+        }
+        31.25% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        37.5% {
+            -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+        }
+        43.75% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        50% {
+            -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+        }
+        56.25% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        62.5% {
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+        }
+        68.75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        75% {
+            -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+        }
+        81.25% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        87.5% {
+            -webkit-transform: translate3d(0, -70%, 0);
+            transform: translate3d(0, -70%, 0);
+        }
+        93.75% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+        }
+    }
+
+
+    .lottery-letter-move-container {
+        width: auto;
+        /* border: 1px solid #999; */
+        /* margin: 20px auto; */
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+    .lottery-letter-move {
+        animation: scroll 30s infinite;
+        -moz-animation: scroll 30s infinite;
+        -webkit-animation: scroll 30s infinite;
+        -o-animation: scroll 30s infinite;
+        position: relative;
+    }
+    li {
+        /* line-height: 30px; */
+        /* height: 30px; */
+        list-style: none; 
+    }
+
+
+
+    .showpan{ 
+        width: 80%;
+        height: 7%;
+        background-color: rgb(79,74,177);
+        border-radius: 56px;
+        margin: 0rem auto;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        box-shadow: 0px 0px 10px 7px rgba(255,255,255, 0.3);
+        top: 93%;
+        font-size: 18px;
+        text-align: center;
+        /* vertical-align: bottom; */
+        line-height: 0.5rem;
+        color: white;
+    }
+
+    .input-center {
+        float: right;
+        background-color: rgb(79,74,177);
+        color: white;
+        font-size: 16px;
+        width: 20%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .aa {
+        background: url(../../images/bg1.png) no-repeat center  !important;
+        background-size: 100% 100% !important;
+    }
+    /* * {
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+   } */
+   .divContainer-Lottery{
+        /* top:10%; */
+        /* background: radial-gradient(49% 160%, #22b5ff 0, #3a72fa 100%); */
+
+
+        font-size: 0.23333333333333334rem;
+        transform: translateX(-50%);
+        left: 50%;
+        width: auto;
+        height: auto;
+        /* left: 20%; */
+        position: absolute;
+        border-radius: 35px;
+        top:1%;
+    }
+    img {
+        border: 0rem;
+   }
+    ul, li {
+        list-style-type: none;
+   }
+    .lottery-box {
+        background-image: url(../../images/background.png);
+        background-size: 100% 100%;
+        overflow: hidden;
+        height: 7.4rem;
+        width: 4.7rem;
+   }
+    .lottery-box .title {
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: 0.3rem;
+        color: yellow;
+        height: 0.3rem;
+   }
+   .title-alter {
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: 0.3rem;
+        color: yellow;
+        height: 0.3rem;
+    }
+
+    .lottery {
+        /* animation: changeBg .5s ease infinite; */
+        overflow: hidden;
+        width: 4rem;
+        margin: 0.5rem 0.5rem !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+   }
+    @keyframes changeBg {
+        0% {
+            background-image:url(../../images//k1.png);
+       }
+        100% {
+            background-image:url(../../images//k2.png);
+       }
+   }
+    .lottery .lottery-item {
+        height: 44%;
+        width: 84%;
+        position: absolute;
+        top: 32%;
+        left: 8%;
+    
+
+   }
+    .lottery .lottery-item ul li {
+        width: 33.33333333%;
+        height: 33.33333333%;
+        position: absolute;
+        padding-right: 0.05rem;
+   }
+    .lottery .lottery-item ul li:nth-child(2) {
+        left: 33.33333333%;
+   }
+    .lottery .lottery-item ul li:nth-child(3) {
+        left: 66.66666666%;
+   }
+    .lottery .lottery-item ul li:nth-child(4) {
+        left: 66.66666666%;
+        top: 33.33333333%;
+   }
+    .lottery .lottery-item ul li:nth-child(5) {
+        left: 66.66666666%;
+        top: 66.66666666%;
+   }
+    .lottery .lottery-item ul li:nth-child(6) {
+        left: 33.33333333%;
+        top: 66.66666666%;
+   }
+    .lottery .lottery-item ul li:nth-child(7) {
+        left: 0;
+        top: 66.66666666%;
+   }
+    .lottery .lottery-item ul li:nth-child(8) {
+        left: 0;
+        top: 33.33333333%;
+   }
+    .lottery .lottery-item ul li .box {
+        height: 95%;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        background: url(../../images//bg2.png) no-repeat center;
+        background-size: 100% 100%;
+   }
+    .lottery .lottery-item ul li .box img {
+        display: block;
+        height: 0.5rem;
+        margin: 0 auto;
+        margin-top: 0.15rem;
+        /* margin-bottom: 0.05rem; */
+   }
+   .lottery .lottery-item ul li .box span {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: SourceHanSansCN-Medium;
+    }
+
+
+    .lottery .lottery-item ul li .box p {
+        color: #708ABF;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.14rem;
+   }
+    .lottery .lottery-item ul li.on .box {
+        background: url(../../images//bg1.png) no-repeat center;
+        background-size: 100% 100%;
+   }
+    .lottery .lottery-item ul li.on .box p {
+        color: #fff;
+   }
+    .lottery .lottery-item .lottery-start {
+        position: absolute;
+        left: 33.33333333%;
+        width: 33.33333333%;
+        top: 33.33333333%;
+        padding-right: 0.05rem;
+   }
+   
+   .boxstart {
+        background: url(../../images/bg12.png) no-repeat center;
+        background-size: 100% 100%;
+        height: 32.33333333333333%;
+        width: 32.3333%;
+        top: 33.333333333333333333%;
+        left: 33.333333333333333333333333%;
+        position: absolute;
+   }
+    .lottery .lottery-item .lottery-start .box p b {
+        font-size: 0.4rem;
+        margin-top: 0.16rem;
+        margin-bottom: 0.15rem;
+        line-height: 0.3rem;
+        display: block;
+   }
+    .lottery .lottery-item .lottery-start .box:active {
+        opacity: 0.7;
+   }
+    .lottery .lottery-item .lottery-start .box.gray {
+        background: url(../../images//bg3.png) no-repeat center;
+        background-size: 100% 100%;
+   }
+    .lottery .lottery-item .lottery-start .box.gray p {
+        color: #708ABF;
+        font-weight: bold;
+   }
+    .mask {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        position: fixed;
+        overflow: hidden;
+        z-index: 222;
+        top: 0;
+        left: 0;
+   }
+    .lottery-alert {
+        text-align: center;
+        z-index: 10000;
+        border-radius: 0.1rem;
+        background: rgba(0,0,0,0.7);
+        /* padding: 0.2rem; */
+        position: fixed;
+        width: 60%;
+        margin: 0.5rem auto !important;
+        right: 0;
+        /* left: 10%; */
+        margin: auto;
+        top: 50%;
+        /* max-width: 6.666666666666667rem; */
+        border-radius: 0.16666666666666666rem;
+        padding: 0.3333333333333333rem;
+        left: 0;
+        margin: auto;
+        transform: translateY(-50%);
+        border-radius: 13px;
+        box-shadow: 0px 0px 10px 7px rgb(21 18 18 / 30%);
+   }
+   .mask-new-white {
+        width: 100%;
+        height: 100%;
+        /* opacity: 0; */
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease;
+        -moz-transition: opacity 0.3s ease;
+        -webkit-transition: opacity 0.3s ease;
+        z-index: 999999999;
+    }
+
+
+
+    .lottery-alert h1 {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+        letter-spacing: 2px;
+    }
+   
+    .lottery-alert img {
+        display: block;
+        height: 1.2rem;
+        margin: 0 auto;
+   }
+    .lottery-alert h2 {
+        font-weight: normal;
+        color: #D92B2F;
+        font-size: 0.15rem;
+        padding-top: 0.15rem;
+   }
+    .lottery-alert p {
+        color: #666;
+        font-size: 0.16rem;
+        padding-top: 0.05rem;
+   }
+    .lottery-alert .btnsave {
+        border-radius: 0.03rem;
+        box-shadow: none;
+        margin: 0rem 0.2rem 0.2rem 0.2rem;
+        height: 0.4rem;
+        cursor: pointer;
+        line-height: 0.4rem;
+        color: #fff;
+        margin-top: 0.01rem;
+        background: rgb(79,74,177);
+        font-size: 16px;
+        border-radius: 12px;
+        letter-spacing: 0.1rem;
+   }
+    .phone {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 103%;
+        display: block;
+        width: 90%;
+        height: 0.39rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.02rem;
+        box-shadow: rgba(0, 0, 0, 0.3) 0 0 0.03rem 0.02rem;
+        letter-spacing: 0.02rem;
+        text-align: center;
+        line-height: 0.4rem;
+        margin: 0.1rem 0rem !important;
+        z-index: 999999999;
+   }
+    .phone>input {
+        outline: none;
+        line-height: 0.3rem;
+        border: none;
+        vertical-align: middle;
+   }
+   .divContainer-Lottery * {
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+    }
+    .input-phone{
+        border: none;
+        outline: none;
+        width: auto;
+        height: 100%;
+        vertical-align: text-bottom;
+        padding: 0rem 0.35rem;
+        font-size: 0.22rem;
+    }
+
+
+    @media only  screen and (max-width:425px) {
+        .lottery-box {
+            background-image: url(../../images/background.png);
+            background-size: 100% 100%;
+            overflow: hidden;
+            height: 10.4rem;
+            width: 6.7rem;
+        }
+        .showpan {
+            width: 80%;
+            height: 0.8rem;
+            background-color: rgb(79,74,177);
+            border-radius: 56px;
+            margin: 0rem auto;
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            box-shadow: 0px 0px 10px 7px rgba(255,255,255, 0.3);
+            top: 93%;
+            font-size: 14px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 0.8rem;
+            color: white;
+        }
+
+        .icon-user {
+            position: absolute;
+            left: 0.15rem;
+            z-index: 5;
+            background-image: url(../../images/phone.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            width: 10%;
+            height: 80%;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+        .input-phone {
+            border: none;
+            outline: none;
+            width: auto;
+            height: 100%;
+            vertical-align: text-bottom;
+            padding: 0rem 0rem 0rem 0.7rem;
+            /* left: 18%; */
+            font-size: 14px;
+        }
+        .phone {
+
+            height: 0.6rem;
+            line-height: 0.6rem;
+        }
+        .lottery .lottery-item ul li .box img {
+            margin-top: 10%;
+            margin-bottom: 10%;
+       }
+       .lottery-alert h1 {
+            font-size: 14px;
+            height: auto;
+        }
+        .lottery-alert .btnsave {
+            margin: 0.2rem auto;
+            width: 80%;
+            height: 0.7rem;
+            line-height: 0.7rem;
+        }
+        .lottery-alert {
+            width: 70%;
+
+        }
+        .mask-new-white {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .lottery .lottery-item ul li .box span {
+            font-size: 14px;
+        }
+
+        .divContainer-Lottery{
+            top:5%;
+
+
+        }
+
+
+
+    }
+

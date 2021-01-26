@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="./static/css/lottery.css" />
+  <script src="./static/jsmpeg/jquery-2.1.1.min.js"></script>
+  <style>
+		.aa {
+			background: url(./images/bg1.png) no-repeat center;
+    		background-size: 100% 100%;
+		}
+
+  </style>
+
+
+</head>
+
+<body>
+  <div id="phone">手机号码：<input type="number" max="11" placeholder="请填写手机号码"></div>
+  <div id="app" class="lottery-box">
+    <h1 id="prize" class="title">抽奖</h1>
+    <div class="lottery">
+      <div class="lottery-item">
+        <div class="lottery-start">
+          <!---->
+          <div class="box" id='start' onclick=isPhoneNo()>
+          </div>
+          <!---->
+        </div>
+        <ul>
+          <li class="">
+            <div class="aa box">
+              <p><img src="./images/j1.png" alt=""></p>
+              <span ></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j2.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j1.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j2.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j1.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j2.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j1.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+          <li class="">
+            <div class="box">
+              <p><img src="./images/j2.png" alt=""></p>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---->
+    <!---->
+  </div>
+  <!-- <div class="mask" v-if="showToast"></div>
+  <div class="lottery-alert" v-if="showToast">
+    <h1>恭喜您</h1>
+    <p><img src="img/j2.png" alt=""></p>
+    <h2>获得{{list[index].title}}</h2>
+    <div class="btnsave" @click="showToast=false">确定</div>
+  </div> -->
+
+	<script>
+
+
+
+		var prize = document.getElementById('prize');
+    	var spans = document.querySelectorAll(".box>span");
+		getPrize()
+
+		var times = 20;
+
+		function start() {
+			spans.forEach(function (el, index) {
+				if (index != 0) {
+					el.classList.remove('aa'); // 清空上一次结果
+				}
+			})
+
+			prize.textContent = '';
+			$('#start').onclick = null;
+			let num = -1; //奖品序号
+
+			// let times=parseInt(Math.random()*(30-18+1)+18,10);
+			console.log(times);
+			let time = 0; //当前的旋转次数
+			let speed = 100; //转盘速度
+			timer = setInterval(function () {
+				num++;
+				time++;
+				if (num > 7) {
+					num = 0;
+					spans[0].classList.add('aa');
+					spans[7].classList.remove('aa');
+				} else if (num == 0) {
+					spans[num].classList.add('aa');
+					spans[7].classList.remove('aa');
+				} else {
+					spans[num].classList.add('aa');
+					spans[num - 1].classList.remove('aa');
+				}
+				if (time > times) {
+					// spans[8].onclick=start;
+					$('#start').css('cursor', 'pointer')
+					// spans[8].style.cursor="pointer";
+					clearInterval(timer);
+					prize.textContent = '恭喜您抽中了' + spans[num].textContent + '!!!';
+				}
+			}, speed)
+		}
+
+		function getPrize() {
+			var dataResult
+			$.ajax({
+				type: 'get',
+				url: "http://192.168.50.47/index/index/index",
+				dataType: 'json'
+			}).done(function(data){
+				for (let index = 0; index < data.length; index++) {
+          const element = data[index];
+          spans[index].innerText=element.name
+				}
+			});
+		}
+
+
+		// 验证手机号
+		function isPhoneNo() {
+			var phone = $('#phone input').val();
+			if (!phone) {
+				// alert("手机号码不能为空");
+				prize.textContent = '手机号码不能为空!!!';
+				$('#start').css('cursor', 'pointer')
+				return false;
+			}
+			var pattern = /^1[34578]\d{9}$/;
+			if (!pattern.test(phone)) {
+				// alert("手机号码格式不正确，请重填"); 
+				prize.textContent = '手机号码格式不正确，请重填!!!';
+				$('#start').css('cursor', 'pointer')
+				return false;
+			}
+			$('#phone input').attr("disabled", "disabled");
+			$.ajax({
+				type: 'POST',
+				url: "http://192.168.50.47/index/index/isPhone",
+				dataType: 'json',
+				data: {
+					phone: phone
+				},
+				success: function (data) {
+					if (data.code == 1) {
+						getjack(phone)
+						start();
+					} else {
+						// alert(data.msg)
+						prize.textContent = data.msg + '!!!';
+					}
+					console.log(data);
+
+				}
+			});
+		}
+		// 获取中奖id
+		function getjack(phone) {
+			$.ajax({
+				type: 'POST',
+				url: "http://192.168.50.47/index/index/getjack",
+				dataType: 'json',
+				data: {
+					phone: phone
+				},
+				success: function (data) {
+					console.log(data);
+					times = data + 16;
+				}
+			});
+		}
+	</script>
+
+
+  
+</body>
+
+</html>
